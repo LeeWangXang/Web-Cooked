@@ -1,0 +1,155 @@
+/* Biến màu sắc - ĐỒNG BỘ với hệ thống */
+:root {
+    --primary-red: #da0f17;
+    --primary-red-25: rgba(218, 15, 23, 0.25);
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #888888;
+    --border-color: #000000;
+}
+
+/* Sort Dropdown Styles */
+.sort-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 149px;
+}
+
+.sort-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 50px;
+}
+
+.sort-dropdown-toggle:hover {
+    border-color: var(--primary-red);
+}
+
+.sort-text {
+    font-size: 20px;
+    color: #888888;
+    font-weight: 500;
+}
+
+.sort-dropdown-toggle svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.sort-dropdown.active .sort-dropdown-toggle svg {
+    transform: rotate(180deg);
+}
+
+.sort-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 4px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.sort-dropdown.active .sort-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sort-option {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-option:first-child {
+    padding-top: 6px;
+    border-radius: 12px 12px 0 0;
+}
+
+.sort-option:last-child {
+    padding-bottom: 6px;
+    border-radius: 0 0 12px 12px;
+}
+
+.sort-option:hover {
+    background-color: rgba(218, 15, 23, 0.1);
+}
+
+.sort-option.active {
+    background-color: var(--primary-red-25);
+}
+
+.sort-option p {
+    font-size: 20px;
+    color: var(--black);
+    margin: 0;
+    padding: 4px 0;
+}
+
+.sort-dropdown.applied .sort-dropdown-toggle {
+    border-color: #b5b5b5;
+}
+
+.sort-dropdown.applied .sort-dropdown-toggle .sort-text {
+    color: #000000;
+}
+
+.sort-dropdown:not(.applied) .sort-dropdown-toggle .sort-text {
+    color: #888888;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sort-dropdown {
+        width: 140px;
+    }
+    
+    .sort-text {
+        font-size: 18px;
+    }
+    
+    .sort-option p {
+        font-size: 18px;
+    }
+    
+    .sort-dropdown-toggle {
+        padding: 10px 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sort-dropdown {
+        width: 130px;
+    }
+    
+    .sort-text {
+        font-size: 16px;
+    }
+    
+    .sort-option p {
+        font-size: 16px;
+    }
+    
+    .sort-dropdown-toggle {
+        padding: 8px 12px;
+    }
+}

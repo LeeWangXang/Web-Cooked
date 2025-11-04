@@ -1,0 +1,194 @@
+/* Biến màu sắc - ĐỒNG BỘ với hệ thống */
+:root {
+    --primary-red: #da0f17;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #888888;
+    --border-color: #000000;
+    --light-gray: #b5b5b5;
+}
+
+/* Ingredient Filter Styles */
+.ingredient-filter {
+    position: relative;
+    display: inline-block;
+}
+
+.ingredient-filter-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #888888;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 50px;
+}
+
+.ingredient-filter-toggle:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.ingredient-filter-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    margin-top: 4px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 12px;
+}
+
+.ingredient-filter.active .ingredient-filter-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.ingredient-filter-content {
+    display: flex;
+    gap: 32px;
+}
+
+.ingredient-filter-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.ingredient-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+.ingredient-option:hover {
+    background-color: rgba(218, 15, 23, 0.1);
+}
+
+.ingredient-checkbox {
+    width: 27px;
+    height: 27px;
+    border: 0.5px solid var(--light-gray);
+    border-radius: 2px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ingredient-option.selected .ingredient-checkbox {
+    background: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.ingredient-checkbox svg {
+    width: 23px;
+    height: 23px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ingredient-option.selected .ingredient-checkbox svg {
+    opacity: 1;
+}
+
+.ingredient-label {
+    font-size: 20px;
+    color: var(--black);
+    margin: 0;
+}
+
+/* Trạng thái active khi filter mở */
+.ingredient-filter.active .ingredient-filter-toggle {
+    border-color: var(--primary-red);
+}
+
+.ingredient-filter.active .ingredient-filter-toggle p {
+    color: #000000;
+}
+
+.ingredient-filter.active .ingredient-filter-toggle svg path {
+    fill: #000000;
+}
+
+.ingredient-filter.active .ingredient-filter-toggle svg {
+    transform: rotate(180deg);
+}
+
+.filter-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 44px;
+    background: var(--primary-red);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.ingredient-filter.applied .ingredient-filter-toggle {
+    border-color: #b5b5b5;
+}
+
+.ingredient-filter.applied .ingredient-filter-toggle p {
+    color: #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ingredient-filter-menu {
+        width: 300px;
+    }
+    
+    .ingredient-filter-content {
+        gap: 20px;
+    }
+    
+    .ingredient-label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ingredient-filter-menu {
+        width: 280px;
+    }
+    
+    .ingredient-filter-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ingredient-label {
+        font-size: 16px;
+    }
+    
+    .ingredient-checkbox {
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Filter Component</title>
+    <link rel="stylesheet" href="ingredient-filter.css">
+    <style>
+        /* CSS để test component độc lập */
+        body {
+            padding: 50px;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .test-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <!-- Ingredient Filter Component -->
+        <div class="ingredient-filter" id="ingredientFilter">
+            <button class="ingredient-filter-toggle">
+                <p>Nguyên Liệu</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="#888888"/>
+                </svg>
+            </button>
+            
+            <div class="ingredient-filter-menu">
+                <div class="ingredient-filter-content">
+                    <!-- Column 1 -->
+                    <div class="ingredient-filter-column">
+                        <div class="ingredient-option" data-ingredient="thit-heo">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Thịt heo</p>
+                        </div>
+                        <div class="ingredient-option" data-ingredient="gao">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Gạo</p>
+                        </div>
+                        <div class="ingredient-option" data-ingredient="bun">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Bún</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="ingredient-filter-column">
+                        <div class="ingredient-option" data-ingredient="tom">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Tôm</p>
+                        </div>
+                        <div class="ingredient-option" data-ingredient="trung">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Trứng</p>
+                        </div>
+                        <div class="ingredient-option" data-ingredient="ca">
+                            <div class="ingredient-checkbox"></div>
+                            <p class="ingredient-label">Cá</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo thông báo -->
+        <div id="demoMessage" style="padding: 20px; background: white; border-radius: 12px; border: 1px solid #000;">
+            <h3>Selected Ingredients: <span id="selectedIngredients">None</span></h3>
+        </div>
+    </div>
+
+    <script src="ingredient-filter.js"></script>
+    <script>
+        // Demo event listener
+        document.getElementById('ingredientFilter').addEventListener('ingredientFilterChanged', function(e) {
+            const selectedIngredients = e.detail.selectedIngredients;
+            document.getElementById('selectedIngredients').textContent = selectedIngredients.join(', ') || 'None';
+            console.log('Selected ingredients:', selectedIngredients);
+        });
+    </script>
+</body>
+</html>

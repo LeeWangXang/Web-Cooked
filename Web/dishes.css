@@ -1,0 +1,510 @@
+/* Scale entire website to 80% - ĐỒNG BỘ VỚI style.css */
+html {
+    zoom: 0.8;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #000;
+}
+
+/* Biến màu sắc - ĐỒNG BỘ VỚI style.css */
+:root {
+    --primary-red: #da0f17;
+    --dark-red: #9a0006;
+    --yellow: #ffdf20;
+    --white: #ffffff;
+    --cream: #fff8f0;
+    --dark-gray: #1e2939;
+    --gray: #555555;
+    --light-gray: #999999;
+    --border-gray: #e0e0e0;
+    
+    /* Typography */
+    --font-size-sm: 18px;
+    --font-size-base: 20px;
+    --font-size-lg: 24px;
+    --font-size-xl: 28px;
+    --font-size-2xl: 40px;
+    
+    /* Spacing */
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+    --spacing-2xl: 50px;
+}
+
+/* ==================== DISHES-SPECIFIC STYLES ==================== */
+
+/* Dishes Hero Section */
+.dishes-hero {
+    width: 100%;
+    padding: 80px 5%;
+    background: var(--dark-red);
+    text-align: center;
+}
+
+.dishes-hero-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.dishes-hero-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.dishes-hero-subtitle {
+    font-size: var(--font-size-lg);
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Dishes Filter Section */
+.dishes-filter-section {
+    width: 100%;
+    padding: 50px 5%;
+    background: var(--cream);
+}
+
+.dishes-filter-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 23px;
+}
+
+.dishes-filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border: 1px solid var(--border-gray);
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--light-gray);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dishes-filter-btn:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.dishes-filter-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.dishes-apply-btn {
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    height: 50px;
+}
+
+.dishes-apply-btn:hover {
+    background: #b30c13;
+}
+
+/* Dishes Grid Section */
+.dishes-grid-section {
+    width: 100%;
+    padding: 50px 5%;
+    background: var(--cream);
+}
+
+.dishes-grid-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.dishes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dishes-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+    background: var(--white);
+    border: 1px solid var(--border-gray);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dish-image {
+    width: 100%;
+    height: 315px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dish-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.dish-title {
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+}
+
+.recipe-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-red);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    text-decoration: none;
+    transition: gap 0.3s;
+}
+
+.recipe-link:hover {
+    gap: 12px;
+}
+
+.recipe-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dishes Pagination */
+.dishes-pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.dishes-pagination-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--white);
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dishes-pagination-btn:hover {
+    border-color: var(--primary-red);
+}
+
+.dishes-pagination-btn svg {
+    width: 12px;
+    height: 12px;
+}
+
+.dishes-pagination-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 7px;
+    border-radius: 8px;
+    background: var(--white);
+    border: 1px solid var(--border-gray);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dishes-pagination-page.active {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+}
+
+.dishes-pagination-page:hover {
+    border-color: var(--primary-red);
+}
+
+.sort-dropdown.active .sort-dropdown-toggle,
+.type-filter.active .type-filter-toggle,
+.ingredient-filter.active .ingredient-filter-toggle {
+    border-color: var(--primary-red);
+}
+
+.sort-dropdown.active .sort-dropdown-toggle .sort-text,
+.type-filter.active .type-filter-toggle p,
+.ingredient-filter.active .ingredient-filter-toggle p {
+    color: #000000; /* Chuyển sang màu đen */
+}
+
+.sort-dropdown.active .sort-dropdown-toggle svg path,
+.type-filter.active .type-filter-toggle svg path,
+.ingredient-filter.active .ingredient-filter-toggle svg path {
+    fill: #000000; /* Icon chuyển sang màu đen */
+}
+
+
+/* ==================== RESPONSIVE STYLES ==================== */
+
+/* Large Desktop (1600px and below) */
+@media (max-width: 1600px) {
+    .dishes-hero {
+        padding: 80px 5%;
+    }
+    
+    .dishes-filter-section {
+        padding: 50px 5%;
+    }
+    
+    .dishes-grid-section {
+        padding: 50px 5%;
+    }
+    
+    .dishes-row {
+        gap: 40px;
+    }
+    
+    .dish-card {
+        width: 450px;
+    }
+}
+
+/* Tablet Landscape (1200px and below) */
+@media (max-width: 1200px) {
+    .dishes-filter-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .dishes-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .dish-card {
+        width: 400px;
+    }
+    
+    .dishes-hero-title {
+        font-size: 36px;
+    }
+    
+    .dishes-hero-subtitle {
+        font-size: 22px;
+    }
+}
+
+/* Tablet Portrait (992px and below) */
+@media (max-width: 992px) {
+    .dishes-hero {
+        padding: 60px 5%;
+    }
+    
+    .dishes-filter-section {
+        padding: 40px 5%;
+    }
+    
+    .dishes-grid-section {
+        padding: 40px 5%;
+    }
+    
+    .dishes-filter-container {
+        gap: 15px;
+    }
+    
+    .dishes-filter-btn,
+    .dishes-apply-btn {
+        padding: 10px 16px;
+        font-size: 20px;
+    }
+    
+    .dishes-row {
+        gap: 25px;
+    }
+    
+    .dish-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .dishes-hero-title {
+        font-size: 32px;
+    }
+    
+    .dishes-hero-subtitle {
+        font-size: 20px;
+    }
+}
+
+/* Mobile Large (768px and below) */
+@media (max-width: 768px) {
+    .dishes-hero {
+        padding: 50px 5%;
+    }
+    
+    .dishes-filter-section {
+        padding: 30px 5%;
+    }
+    
+    .dishes-grid-section {
+        padding: 30px 5%;
+    }
+    
+    .dishes-filter-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .dishes-filter-btn,
+    .dishes-apply-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 8px 14px;
+        font-size: 18px;
+    }
+    
+    .dishes-grid {
+        gap: 30px;
+    }
+    
+    .dishes-row {
+        gap: 20px;
+    }
+    
+    .dish-image {
+        height: 250px;
+    }
+    
+    .dish-info {
+        padding: 18px;
+    }
+    
+    .dish-title {
+        font-size: 24px;
+    }
+    
+    .recipe-link {
+        font-size: 18px;
+    }
+    
+    .dishes-hero-title {
+        font-size: 28px;
+    }
+    
+    .dishes-hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .dishes-pagination {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
+
+/* Mobile Small (576px and below) */
+@media (max-width: 576px) {
+    .dishes-hero {
+        padding: 40px 5%;
+    }
+    
+    .dishes-filter-section {
+        padding: 25px 5%;
+    }
+    
+    .dishes-grid-section {
+        padding: 25px 5%;
+    }
+    
+    .dishes-filter-btn p,
+    .dishes-apply-btn p {
+        font-size: 16px;
+    }
+    
+    .dish-image {
+        height: 200px;
+    }
+    
+    .dish-info {
+        padding: 16px;
+    }
+    
+    .dish-title {
+        font-size: 22px;
+    }
+    
+    .recipe-link {
+        font-size: 16px;
+    }
+    
+    .dishes-hero-title {
+        font-size: 26px;
+    }
+    
+    .dishes-hero-subtitle {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Extra Small (400px and below) */
+@media (max-width: 400px) {
+    .dishes-hero-title {
+        font-size: 24px;
+    }
+    
+    .dishes-hero-subtitle {
+        font-size: 15px;
+    }
+    
+    .dish-title {
+        font-size: 20px;
+    }
+    
+    .recipe-link {
+        font-size: 15px;
+    }
+    
+    .dish-image {
+        height: 180px;
+    }
+}

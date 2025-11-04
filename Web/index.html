@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Ẩm Thực Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-search">
+                <a href="index.html" class="logo">LOGO HERE</a>
+                <div class="search-bar">
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.25 26.75L20.8125 21.3125M23.75 14.25C23.75 19.7728 19.2728 24.25 13.75 24.25C8.22715 24.25 3.75 19.7728 3.75 14.25C3.75 8.72715 8.22715 4.25 13.75 4.25C19.2728 4.25 23.75 8.72715 23.75 14.25Z" stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p>Tìm công thức hoặc sản phẩm</p>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="dishes.html">Món Ăn</a>
+                <a href="blog.html">Blog</a>
+                <a href="store.html">Cửa Hàng</a>
+            </nav>
+            <div class="user-actions">
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.05 6.26252C25.4116 5.62378 24.6535 5.11708 23.8192 4.77138C22.9849 4.42568 22.0906 4.24774 21.1875 4.24774C20.2844 4.24774 19.3902 4.42568 18.5558 4.77138C17.7215 5.11708 16.9635 5.62378 16.325 6.26252L15 7.58752L13.675 6.26252C12.3854 4.97291 10.6363 4.24841 8.81253 4.24841C6.98874 4.24841 5.23964 4.97291 3.95003 6.26252C2.66041 7.55214 1.93591 9.30123 1.93591 11.125C1.93591 12.9488 2.66041 14.6979 3.95003 15.9875L15 27.0375L26.05 15.9875C26.6888 15.3491 27.1955 14.591 27.5412 13.7567C27.8869 12.9224 28.0648 12.0281 28.0648 11.125C28.0648 10.2219 27.8869 9.32765 27.5412 8.49333C27.1955 7.65901 26.6888 6.90097 26.05 6.26252Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1625 26.75C16.9427 27.1288 16.6273 27.4433 16.2478 27.6619C15.8683 27.8805 15.438 27.9956 15 27.9956C14.562 27.9956 14.1317 27.8805 13.7522 27.6619C13.3727 27.4433 13.0573 27.1288 12.8375 26.75M22.5 10.5C22.5 8.51088 21.7098 6.60322 20.3033 5.1967C18.8968 3.79018 16.9891 3 15 3C13.0109 3 11.1032 3.79018 9.6967 5.1967C8.29018 6.60322 7.5 8.51088 7.5 10.5C7.5 19.25 3.75 21.75 3.75 21.75H26.25C26.25 21.75 22.5 19.25 22.5 10.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="login-button">
+                    <p>Đăng Nhập</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Khám Phá Hương Vị Việt Nam<br><span>Qua Từng Công Thức</span></h1>
+                <p>Nấu ăn ngon không khó với những công thức chi tiết, dễ làm và đậm đà <br>hương vị Việt Nam.</p>
+                <div class="hero-buttons">
+                    <a href="dishes.html" class="primary-button">
+                        <p>Khám Phá Công Thức</p>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 26.6667L26.6667 20M26.6667 20L20 13.3333M26.6667 20H13.3333M36.6667 20C36.6667 29.2047 29.2047 36.6667 20 36.6667C10.7952 36.6667 3.33333 29.2047 3.33333 20C3.33333 10.7952 10.7952 3.33333 20 3.33333C29.2047 3.33333 36.6667 10.7952 36.6667 20Z" stroke="#DA0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <a href="blog.html" class="secondary-button">
+                        <p>Đọc Blog Ẩm Thực</p>
+                    </a>
+                </div>
+            </div>
+            <img src="images/rectangle-1.jpeg" alt="Món ăn Việt Nam" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+        <div class="explore-container">
+            <div class="section-header">
+                <svg width="102" height="8" viewBox="0 0 102 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4.5" y1="4" x2="97.5" y2="4.00001" stroke="#DA0F17" stroke-width="8" stroke-linecap="round"></line>
+                </svg>
+                <h2>Khám Phá Theo Loại Món</h2>
+                <p>Tìm kiếm công thức dựa trên loại món ăn bạn muốn thưởng thức<br>từ món kho đậm đà đến đồ uống giải khát.</p>
+            </div>
+            <div class="explore-categories">
+                <div class="category-item">
+                    <img src="images/rectangle-2.jpeg" alt="Món Kho">
+                    <div class="category-overlay">
+                        <p>Món Kho</p>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="images/rectangle-3.png" alt="Món Canh">
+                    <div class="category-overlay">
+                        <p>Món Canh</p>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="images/rectangle-4.png" alt="Món Tráng Miệng">
+                    <div class="category-overlay">
+                        <p>Món Tráng Miệng</p>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="images/rectangle-5.jpeg" alt="Đồ Uống">
+                    <div class="category-overlay">
+                        <p>Đồ Uống</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38 24H10M10 24L24 38M10 24L24 10" stroke="#DA0F17" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 24H38M38 24L24 10M38 24L24 38" stroke="#DA0F17" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Recipes Section -->
+    <section class="popular-recipes">
+        <div class="recipes-container">
+            <div class="section-header-1">
+                <svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="4" x2="97" y2="4.00001" stroke="#DA0F17" stroke-width="8" stroke-linecap="round"></line>
+                </svg>
+                <a href="dishes.html" style="text-decoration: none;" class="section-title">
+                    <h2>Công Thức Phổ Biến</h2>
+                    <div class="view-all">
+                        <p>Xem tất cả</p>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66669 16H25.3334M25.3334 16L16 6.66669M25.3334 16L16 25.3334" stroke="#DA0F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="recipes-grid">
+                <a href="recipe-detail-1.html" style="text-decoration: none;" class="recipe-card">
+                    <img src="images/rectangle-6-2.jpeg" alt="Miến Gà Trộn">
+                    <div class="recipe-info">
+                        <h3>Miến Gà Trộn</h3>
+                        <div class="recipe-details">
+                            <div class="difficulty">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.25 2.5L3.75 17.5H15L13.75 27.5L26.25 12.5H15L16.25 2.5Z" stroke="#DA0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p>Độ khó: Trung bình</p>
+                            </div>
+                            <div class="rating">
+                                <p>4.9</p>
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64062 14.25L4.65625 9.85938L1.25 6.90625L5.75 6.51562L7.5 2.375L9.25 6.51562L13.75 6.90625L10.3438 9.85938L11.3594 14.25L7.5 11.9219L3.64062 14.25Z" fill="#1D1B20"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="recipe-detail-2.html" style="text-decoration: none;" class="recipe-card">
+                    <img src="images/rectangle-6.png" alt="Gỏi Cuốn Tôm Thịt">
+                    <div class="recipe-info">
+                        <h3>Gỏi Cuốn Tôm Thịt</h3>
+                        <div class="recipe-details">
+                            <div class="difficulty">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.25 2.5L3.75 17.5H15L13.75 27.5L26.25 12.5H15L16.25 2.5Z" stroke="#DA0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p>Độ khó: Dễ</p>
+                            </div>
+                            <div class="rating">
+                                <p>4.9</p>
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64062 14.25L4.65625 9.85938L1.25 6.90625L5.75 6.51562L7.5 2.375L9.25 6.51562L13.75 6.90625L10.3438 9.85938L11.3594 14.25L7.5 11.9219L3.64062 14.25Z" fill="#1D1B20"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="recipe-detail-3.html" style="text-decoration: none;" class="recipe-card">
+                    <img src="images/rectangle-6-3.jpeg" alt="Thịt Ba Chỉ Chiên Giòn">
+                    <div class="recipe-info">
+                        <h3>Thịt Ba Chỉ Chiên Giòn</h3>
+                        <div class="recipe-details">
+                            <div class="difficulty">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.25 2.5L3.75 17.5H15L13.75 27.5L26.25 12.5H15L16.25 2.5Z" stroke="#DA0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p>Độ khó: Khó</p>
+                            </div>
+                            <div class="rating">
+                                <p>4.9</p>
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64062 14.25L4.65625 9.85938L1.25 6.90625L5.75 6.51562L7.5 2.375L9.25 6.51562L13.75 6.90625L10.3438 9.85938L11.3594 14.25L7.5 11.9219L3.64062 14.25Z" fill="#1D1B20"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="why-choose-container">
+            <div class="section-header">
+                <svg width="102" height="8" viewBox="0 0 102 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4.5" y1="4" x2="97.5" y2="4.00001" stroke="#DA0F17" stroke-width="8" stroke-linecap="round"></line>
+                </svg>
+                <h2>Tại Sao Chọn [Tên Logo]?</h2>
+                <p>Chúng tôi mang đến trải nghiệm nấu ăn tuyệt vời với những tính năng đặc biệt.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.1644V17.7162C0.00027964 17.9881 0.0701416 18.2555 0.202938 18.4928C0.335735 18.7301 0.52705 18.9295 0.758678 19.072C0.990306 19.2145 1.25454 19.2953 1.52625 19.3069C1.79795 19.3184 2.06808 19.2602 2.31094 19.1378L5.13506 17.7162L6.33675 17.1106L6.375 17.0914L10.8503 14.8347L11.0734 14.7199L13.1835 13.6585L15.1056 12.6895C15.3691 12.5567 15.5906 12.3533 15.7453 12.102C15.9001 11.8507 15.982 11.5614 15.982 11.2663C15.982 10.9712 15.9001 10.6818 15.7453 10.4305C15.5906 10.1793 15.3691 9.97588 15.1056 9.84306L13.1835 8.87087L11.0734 7.80943L10.8503 7.69468L6.375 5.43793L6.33675 5.42199L5.13506 4.81637L2.31094 3.39156C2.06808 3.26918 1.79795 3.21098 1.52625 3.2225C1.25454 3.23402 0.990306 3.31487 0.758678 3.45736C0.52705 3.59985 0.335735 3.79924 0.202938 4.03656C0.0701416 4.27388 0.00027964 4.54123 0 4.81318L0 13.1644ZM23.1094 6.37506C22.4753 6.37506 21.8673 6.62692 21.4189 7.07525C20.9706 7.52358 20.7188 8.13165 20.7188 8.76568C20.7188 9.39971 20.9706 10.0078 21.4189 10.4561C21.8673 10.9044 22.4753 11.1563 23.1094 11.1563H45.4219C45.6332 11.1563 45.8359 11.2403 45.9854 11.3897C46.1348 11.5391 46.2188 11.7418 46.2188 11.9532V39.0469C46.2188 39.2583 46.1348 39.461 45.9854 39.6104C45.8359 39.7599 45.6332 39.8438 45.4219 39.8438H15.1406C14.9293 39.8438 14.7266 39.7599 14.5771 39.6104C14.4277 39.461 14.3438 39.2583 14.3438 39.0469V21.5284C14.3438 20.8944 14.0919 20.2863 13.6436 19.838C13.1952 19.3897 12.5872 19.1378 11.9531 19.1378C11.3191 19.1378 10.711 19.3897 10.2627 19.838C9.81437 20.2863 9.5625 20.8944 9.5625 21.5284V39.0469C9.5625 42.1261 12.0615 44.6251 15.1406 44.6251H45.4219C46.9013 44.6251 48.3201 44.0374 49.3662 42.9913C50.4123 41.9452 51 40.5263 51 39.0469V11.9532C51 10.4738 50.4123 9.05495 49.3662 8.00885C48.3201 6.96275 46.9013 6.37506 45.4219 6.37506H23.1094ZM21.5156 19.1251C20.8816 19.1251 20.2735 19.3769 19.8252 19.8253C19.3769 20.2736 19.125 20.8816 19.125 21.5157C19.125 22.1497 19.3769 22.7578 19.8252 23.2061C20.2735 23.6544 20.8816 23.9063 21.5156 23.9063H39.0469C39.6809 23.9063 40.289 23.6544 40.7373 23.2061C41.1856 22.7578 41.4375 22.1497 41.4375 21.5157C41.4375 20.8816 41.1856 20.2736 40.7373 19.8253C40.289 19.3769 39.6809 19.1251 39.0469 19.1251H21.5156ZM19.125 29.4844C19.125 28.8504 19.3769 28.2423 19.8252 27.794C20.2735 27.3457 20.8816 27.0938 21.5156 27.0938H32.6719C33.3059 27.0938 33.914 27.3457 34.3623 27.794C34.8106 28.2423 35.0625 28.8504 35.0625 29.4844C35.0625 30.1185 34.8106 30.7265 34.3623 31.1749C33.914 31.6232 33.3059 31.8751 32.6719 31.8751H21.5156C20.8816 31.8751 20.2735 31.6232 19.8252 31.1749C19.3769 30.7265 19.125 30.1185 19.125 29.4844Z" fill="#DA0F17"></path>
+                    </svg>
+                    <h3>Công Thức Chi Tiết</h3>
+                    <p>Hướng dẫn từng bước có hình ảnh minh họa, giúp bạn nấu ăn dễ dàng ngay cả khi mới bắt đầu.</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="53" height="55" viewBox="0 0 53 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.8951 15.9091V2H42.425L51 10.1136V53H36.3M38.75 2V13.5909H51M10.575 37.9318L19.15 29.8182L27.725 37.9318M19.15 30.9773V46.0455M19.15 53C23.6985 53 28.0606 51.2903 31.2769 48.2471C34.4931 45.2039 36.3 41.0765 36.3 36.7727C36.3 32.469 34.4931 28.3415 31.2769 25.2983C28.0606 22.2551 23.6985 20.5455 19.15 20.5455C14.6015 20.5455 10.2394 22.2551 7.02312 25.2983C3.80687 28.3415 2 32.469 2 36.7727C2 41.0765 3.80687 45.2039 7.02312 48.2471C10.2394 51.2903 14.6015 53 19.15 53Z" stroke="#DA0F17" stroke-width="4"></path>
+                    </svg>
+                    <h3>Cập Nhật Thường Xuyên</h3>
+                    <p>Thường xuyên cập nhật công thức mới và các xu hướng ẩm thực hiện đại kết hợp với truyền thống.</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="55" height="51" viewBox="0 0 55 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.5 3.92308C26.7261 3.92308 25.9599 4.07529 25.2449 4.37102C24.5299 4.66675 23.8803 5.1002 23.3331 5.64664C22.7859 6.19308 22.3519 6.84179 22.0557 7.55575C21.7596 8.2697 21.6071 9.03491 21.6071 9.80769C21.6071 10.5805 21.7596 11.3457 22.0557 12.0596C22.3519 12.7736 22.7859 13.4223 23.3331 13.9687C23.8803 14.5152 24.5299 14.9486 25.2449 15.2444C25.9599 15.5401 26.7261 15.6923 27.5 15.6923C29.0629 15.6923 30.5618 15.0723 31.6669 13.9687C32.772 12.8652 33.3929 11.3684 33.3929 9.80769C33.3929 8.24699 32.772 6.75022 31.6669 5.64664C30.5618 4.54306 29.0629 3.92308 27.5 3.92308ZM17.6786 9.80769C17.6786 7.20653 18.7133 4.71191 20.5552 2.87261C22.3971 1.03331 24.8952 0 27.5 0C30.1048 0 32.6029 1.03331 34.4448 2.87261C36.2867 4.71191 37.3214 7.20653 37.3214 9.80769C37.3214 12.4089 36.2867 14.9035 34.4448 16.7428C32.6029 18.5821 30.1048 19.6154 27.5 19.6154C24.8952 19.6154 22.3971 18.5821 20.5552 16.7428C18.7133 14.9035 17.6786 12.4089 17.6786 9.80769ZM11.7857 29.4231C11.7883 28.7065 11.8617 28.0134 12.0057 27.3438L4.36857 29.3838C3.62094 29.5841 2.92014 29.9295 2.30621 30.4003C1.69228 30.8711 1.17725 31.4581 0.790536 32.1277C0.403824 32.7973 0.153009 33.5364 0.0524184 34.3028C-0.0481722 35.0692 0.0034332 35.848 0.204286 36.5945L1.72857 42.279C2.13839 43.8043 2.85141 45.2316 3.82518 46.476C4.79895 47.7203 6.01355 48.7563 7.39663 49.5221C8.7797 50.2879 10.303 50.7679 11.8757 50.9335C13.4484 51.0991 15.0385 50.9469 16.5511 50.4861C15.5004 49.4683 14.5972 48.309 13.8679 47.0416C12.0172 47.22 10.1631 46.7373 8.6353 45.6792C7.10747 44.6211 6.00489 43.0563 5.52357 41.2629L3.99536 35.5745C3.86103 35.0719 3.93207 34.5367 4.19287 34.0864C4.45367 33.6362 4.88286 33.3078 5.38607 33.1735L11.7857 31.4631V29.4231ZM38.8379 50.5998L38.445 50.49C39.4939 49.47 40.4014 48.3127 41.1321 47.0416C42.9828 47.22 44.8369 46.7373 46.3647 45.6792C47.8925 44.6211 48.9951 43.0563 49.4764 41.2629L51.0007 35.5745C51.1352 35.0725 51.0647 34.5377 50.8047 34.0875C50.5447 33.6374 50.1164 33.3087 49.6139 33.1735L43.2143 31.4631V29.4231C43.2117 28.7065 43.1383 28.0134 42.9943 27.3438L50.6275 29.3838C51.3755 29.5837 52.0767 29.9288 52.6911 30.3994C53.3054 30.87 53.8209 31.4569 54.208 32.1266C54.5951 32.7962 54.8463 33.5355 54.9471 34.3021C55.0479 35.0687 54.9965 35.8477 54.7957 36.5945L53.2714 42.279C52.4613 45.2929 50.4857 47.8621 47.779 49.4217C45.0724 50.9813 41.8563 51.4076 38.8379 50.5998ZM3.92857 15.6923C3.92857 14.6518 4.34247 13.654 5.07922 12.9183C5.81597 12.1826 6.81522 11.7692 7.85714 11.7692C8.89907 11.7692 9.89831 12.1826 10.6351 12.9183C11.3718 13.654 11.7857 14.6518 11.7857 15.6923C11.7857 16.7328 11.3718 17.7306 10.6351 18.4663C9.89831 19.2021 8.89907 19.6154 7.85714 19.6154C6.81522 19.6154 5.81597 19.2021 5.07922 18.4663C4.34247 17.7306 3.92857 16.7328 3.92857 15.6923ZM7.85714 7.84615C5.7733 7.84615 3.7748 8.6728 2.3013 10.1442C0.827804 11.6157 0 13.6114 0 15.6923C0 17.7732 0.827804 19.7689 2.3013 21.2404C3.7748 22.7118 5.7733 23.5385 7.85714 23.5385C9.94099 23.5385 11.9395 22.7118 13.413 21.2404C14.8865 19.7689 15.7143 17.7732 15.7143 15.6923C15.7143 13.6114 14.8865 11.6157 13.413 10.1442C11.9395 8.6728 9.94099 7.84615 7.85714 7.84615ZM47.1429 11.7692C46.1009 11.7692 45.1017 12.1826 44.3649 12.9183C43.6282 13.654 43.2143 14.6518 43.2143 15.6923C43.2143 16.7328 43.6282 17.7306 44.3649 18.4663C45.1017 19.2021 46.1009 19.6154 47.1429 19.6154C48.1848 19.6154 49.184 19.2021 49.9208 18.4663C50.6575 17.7306 51.0714 16.7328 51.0714 15.6923C51.0714 14.6518 50.6575 13.654 49.9208 12.9183C49.184 12.1826 48.1848 11.7692 47.1429 11.7692ZM39.2857 15.6923C39.2857 13.6114 40.1135 11.6157 41.587 10.1442C43.0605 8.6728 45.059 7.84615 47.1429 7.84615C49.2267 7.84615 51.2252 8.6728 52.6987 10.1442C54.1722 11.6157 55 13.6114 55 15.6923C55 17.7732 54.1722 19.7689 52.6987 21.2404C51.2252 22.7118 49.2267 23.5385 47.1429 23.5385C45.059 23.5385 43.0605 22.7118 41.587 21.2404C40.1135 19.7689 39.2857 17.7732 39.2857 15.6923ZM21.6071 23.5385C20.0443 23.5385 18.5454 24.1584 17.4403 25.262C16.3351 26.3656 15.7143 27.8624 15.7143 29.4231V39.2308C15.7143 42.3522 16.956 45.3457 19.1662 47.5529C21.3765 49.76 24.3742 51 27.5 51C30.6258 51 33.6235 49.76 35.8338 47.5529C38.044 45.3457 39.2857 42.3522 39.2857 39.2308V29.4231C39.2857 27.8624 38.6649 26.3656 37.5597 25.262C36.4546 24.1584 34.9557 23.5385 33.3929 23.5385H21.6071ZM19.6429 29.4231C19.6429 28.9028 19.8498 28.4039 20.2182 28.0361C20.5866 27.6682 21.0862 27.4615 21.6071 27.4615H33.3929C33.9138 27.4615 34.4134 27.6682 34.7818 28.0361C35.1502 28.4039 35.3571 28.9028 35.3571 29.4231V39.2308C35.3571 41.3117 34.5293 43.3074 33.0558 44.7788C31.5823 46.2503 29.5838 47.0769 27.5 47.0769C25.4162 47.0769 23.4177 46.2503 21.9442 44.7788C20.4707 43.3074 19.6429 41.3117 19.6429 39.2308V29.4231Z" fill="#DA0F17"></path>
+                    </svg>
+                    <h3>Cộng Đồng Ẩm Thực</h3>
+                    <p>Tham gia thảo luận, chia sẻ kinh nghiệm và kết nối với những người yêu thích ẩm thực Việt Nam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts">
+        <div class="posts-container">
+            <div class="section-header-1">
+                <svg width="101" height="8" viewBox="0 0 101 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="4" x2="97" y2="4.00001" stroke="#DA0F17" stroke-width="8" stroke-linecap="round"></line>
+                </svg>
+                <div class="section-title">
+                    <h2>Bài Viết Gần Đây</h2>
+                    <a href="blog.html" style="text-decoration: none;" class="view-all">
+                        <p>Xem tất cả</p>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66669 16.0001H25.3334M25.3334 16.0001L16 6.66675M25.3334 16.0001L16 25.3334" stroke="#DA0F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="posts-grid">
+                <a href="blog-detail-1.html" style="text-decoration: none;" class="post-card">
+                    <div class="post-image" style="background-image: url('images/frame-45.jpeg');">
+                        <div class="blog-tag">
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-date">
+                            <p>30 thg 4, 2025</p>
+                        </div>
+                        <h3>Đánh Giá: Salad Tôm Dưa Leo</h3>
+                        <p>Đánh Giá Món Salad Tôm Dưa Leo - Một Khúc Hành Trình Tươi Mát</p>
+                        <div class="post-divider"></div>
+                        <div class="read-more">
+                            <p>Đọc tiếp</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#DA0F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog-detail-2.html" style="text-decoration: none;" class="post-card">
+                    <div class="post-image" style="background-image: url('images/frame-46.jpeg');">
+                        <div class="blog-tag">
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-date">
+                            <p>28 thg 9, 2025</p>
+                        </div>
+                        <h3>Đánh Giá: Đậu Bắp Xào Thịt Bò</h3>
+                        <p>Đánh Giá Món Đậu Bắp Xào Thịt Bò – Dân Dã Nhưng Đậm Đà Khó Quên</p>
+                        <div class="post-divider"></div>
+                        <div class="read-more">
+                            <p>Đọc tiếp</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#DA0F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog-detail-3.html" style="text-decoration: none;" class="post-card">
+                    <div class="post-image" style="background-image: url('images/frame-47.jpeg');">
+                        <div class="blog-tag">
+                            <p>Blog</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-date">
+                            <p>25 thg 8, 2025</p>
+                        </div>
+                        <h3>Đánh Giá: Salad Gà Giòn</h3>
+                        <p>Đánh Giá Món Salad Gà Giòn – Khi Độ Giòn Gặp Gỡ Sự Tươi Mát</p>
+                        <div class="post-divider"></div>
+                        <div class="read-more">
+                            <p>Đọc tiếp</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#DA0F17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2>Bắt Đầu Hành Trình Ẩm Thực Của Bạn</h2>
+            <p>Hàng trăm công thức nấu ăn Việt Nam đang chờ bạn khám phá<br>Bắt đầu nấu ăn ngay hôm nay!</p>
+            <div class="cta-buttons">
+                <a href="dishes.html" style="text-decoration: none;" class="primary-button">
+                    <p>Xem Công thức mới nhất</p>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 26.6666L26.6667 19.9999M26.6667 19.9999L20 13.3333M26.6667 19.9999H13.3333M36.6667 19.9999C36.6667 29.2047 29.2048 36.6666 20 36.6666C10.7953 36.6666 3.33334 29.2047 3.33334 19.9999C3.33334 10.7952 10.7953 3.33325 20 3.33325C29.2048 3.33325 36.6667 10.7952 36.6667 19.9999Z" stroke="#DA0F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </a>
+                <div class="secondary-button">
+                    <p>Tìm Hiểu Thêm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>LOGO HERE</h3>
+                <p>Chia sẻ niềm đam mê nấu ăn và khám phá ẩm thực Việt Nam<br>qua những công thức đơn giản và chi tiết.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Khám Phá</h4>
+                <p>Công Thức Nấu Ăn</p>
+                <p>Blog Ẩm Thực</p>
+                <p>Giới Thiệu</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Kết Nối</h4>
+                <div class="contact-item">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.1666 8.50008C31.1666 6.94175 29.8916 5.66675 28.3333 5.66675H5.66665C4.10831 5.66675 2.83331 6.94175 2.83331 8.50008M31.1666 8.50008V25.5001C31.1666 27.0584 29.8916 28.3334 28.3333 28.3334H5.66665C4.10831 28.3334 2.83331 27.0584 2.83331 25.5001V8.50008M31.1666 8.50008L17 18.4167L2.83331 8.50008" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <p>Contact@tenlogo.vn</p>
+                </div>
+                <div class="social-icons">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.1666 16.9999C31.1666 9.17992 24.82 2.83325 17 2.83325C9.17998 2.83325 2.83331 9.17992 2.83331 16.9999C2.83331 23.8566 7.70665 29.5658 14.1666 30.8832V21.2499H11.3333V16.9999H14.1666V13.4583C14.1666 10.7241 16.3908 8.49992 19.125 8.49992H22.6666V12.7499H19.8333C19.0541 12.7499 18.4166 13.3874 18.4166 14.1666V16.9999H22.6666V21.2499H18.4166V31.0958C25.5708 30.3874 31.1666 24.3524 31.1666 16.9999Z" fill="#999999"></path>
+                    </svg>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.7916 9.20825H24.8058M9.91665 2.83325H24.0833C27.9953 2.83325 31.1666 6.00457 31.1666 9.91659V24.0833C31.1666 27.9953 27.9953 31.1666 24.0833 31.1666H9.91665C6.00463 31.1666 2.83331 27.9953 2.83331 24.0833V9.91659C2.83331 6.00457 6.00463 2.83325 9.91665 2.83325ZM22.6666 16.1074C22.8415 17.2864 22.6401 18.4906 22.0911 19.5485C21.5422 20.6065 20.6736 21.4644 19.6089 22.0003C18.5443 22.5362 17.3378 22.7227 16.161 22.5333C14.9842 22.344 13.8971 21.7884 13.0543 20.9456C12.2115 20.1028 11.6559 19.0157 11.4666 17.8389C11.2772 16.6621 11.4637 15.4556 11.9996 14.3909C12.5355 13.3263 13.3934 12.4577 14.4514 11.9088C15.5093 11.3598 16.7135 11.1584 17.8925 11.3333C19.0951 11.5116 20.2085 12.072 21.0682 12.9317C21.9279 13.7914 22.4883 14.9048 22.6666 16.1074Z" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6667 30.8125C24.8271 30.8125 26.899 29.9543 28.4266 28.4266C29.9543 26.899 30.8125 24.8271 30.8125 22.6667V11.3333C30.8125 9.17292 29.9543 7.101 28.4266 5.57336C26.899 4.04572 24.8271 3.1875 22.6667 3.1875H11.3333C9.17292 3.1875 7.101 4.04572 5.57336 5.57336C4.04572 7.101 3.1875 9.17292 3.1875 11.3333V22.6667C3.1875 24.8271 4.04572 26.899 5.57336 28.4266C7.101 29.9543 9.17292 30.8125 11.3333 30.8125H22.6667ZM19.4239 8.16425C19.3438 7.92546 19.1814 7.72292 18.9657 7.59275C18.7501 7.46259 18.4952 7.41328 18.2465 7.45361C17.9979 7.49395 17.7717 7.6213 17.6082 7.81296C17.4448 8.00462 17.3547 8.24811 17.3542 8.5V21.25C17.3542 21.8804 17.1672 22.4967 16.817 23.0209C16.4667 23.5451 15.9689 23.9536 15.3865 24.1949C14.804 24.4361 14.1631 24.4992 13.5448 24.3763C12.9265 24.2533 12.3585 23.9497 11.9128 23.5039C11.467 23.0581 11.1634 22.4902 11.0404 21.8719C10.9174 21.2535 10.9805 20.6126 11.2218 20.0302C11.4631 19.4478 11.8716 18.9499 12.3958 18.5997C12.92 18.2494 13.5362 18.0625 14.1667 18.0625C14.4485 18.0625 14.7187 17.9506 14.918 17.7513C15.1172 17.552 15.2292 17.2818 15.2292 17C15.2292 16.7182 15.1172 16.448 14.918 16.2487C14.7187 16.0494 14.4485 15.9375 14.1667 15.9375C13.116 15.9375 12.0888 16.2491 11.2152 16.8328C10.3416 17.4166 9.66065 18.2463 9.25856 19.217C8.85647 20.1877 8.75126 21.2559 8.95625 22.2864C9.16123 23.3169 9.6672 24.2635 10.4102 25.0065C11.1531 25.7495 12.0997 26.2554 13.1302 26.4604C14.1608 26.6654 15.2289 26.5602 16.1997 26.1581C17.1704 25.756 18.0001 25.0751 18.5838 24.2015C19.1676 23.3278 19.4792 22.3007 19.4792 21.25V11.9822C20.5658 12.9908 22.0957 13.8125 24.0833 13.8125C24.3651 13.8125 24.6354 13.7006 24.8346 13.5013C25.0339 13.302 25.1458 13.0318 25.1458 12.75C25.1458 12.4682 25.0339 12.198 24.8346 11.9987C24.6354 11.7994 24.3651 11.6875 24.0833 11.6875C22.7063 11.6875 21.6594 11.1208 20.8831 10.3856C20.0898 9.63192 19.6109 8.72383 19.4239 8.16425Z" fill="#999999"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="copyright-container">
+            <div class="copyright-info">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 2.83325C24.8242 2.83325 31.1666 9.17567 31.1666 16.9999C31.1666 24.8242 24.8242 31.1666 17 31.1666C9.17573 31.1666 2.83331 24.8242 2.83331 16.9999C2.83331 9.17567 9.17573 2.83325 17 2.83325ZM17 5.66659C13.9942 5.66659 11.1115 6.86063 8.9861 8.98604C6.86069 11.1115 5.66665 13.9941 5.66665 16.9999C5.66665 20.0057 6.86069 22.8884 8.9861 25.0138C11.1115 27.1392 13.9942 28.3333 17 28.3333C20.0058 28.3333 22.8884 27.1392 25.0139 25.0138C27.1393 22.8884 28.3333 20.0057 28.3333 16.9999C28.3333 13.9941 27.1393 11.1115 25.0139 8.98604C22.8884 6.86063 20.0058 5.66659 17 5.66659ZM17 9.91658C18.0048 9.91644 18.9982 10.1301 19.9142 10.5434C20.8301 10.9567 21.6477 11.5601 22.3125 12.3136C22.5612 12.5954 22.6878 12.9644 22.6644 13.3396C22.641 13.7147 22.4696 14.0652 22.1878 14.3139C21.906 14.5626 21.537 14.6892 21.1618 14.6659C20.7867 14.6425 20.4362 14.471 20.1875 14.1893C19.6165 13.5417 18.8619 13.0833 18.0241 12.8752C17.1862 12.6671 16.3048 12.7191 15.4973 13.0243C14.6897 13.3295 13.9942 13.8734 13.5033 14.5836C13.0125 15.2938 12.7496 16.1366 12.7496 16.9999C12.7496 17.8632 13.0125 18.7061 13.5033 19.4163C13.9942 20.1265 14.6897 20.6704 15.4973 20.9755C16.3048 21.2807 17.1862 21.3327 18.0241 21.1246C18.8619 20.9165 19.6165 20.4582 20.1875 19.8106C20.4362 19.5288 20.7867 19.3573 21.1618 19.334C21.537 19.3106 21.906 19.4372 22.1878 19.6859C22.4696 19.9346 22.641 20.2851 22.6644 20.6603C22.6878 21.0354 22.5612 21.4045 22.3125 21.6863C21.5295 22.5737 20.5365 23.2509 19.4244 23.6558C18.3123 24.0607 17.1165 24.1805 15.9461 24.0043C14.7758 23.828 13.6683 23.3613 12.7248 22.6468C11.7812 21.9323 11.0318 20.9928 10.5449 19.914C10.058 18.8353 9.84911 17.6518 9.9374 16.4715C10.0257 15.2913 10.4083 14.152 11.0503 13.1577C11.6923 12.1634 12.5732 11.3458 13.6125 10.7797C14.6518 10.2135 15.8164 9.91675 17 9.91658Z" fill="#555555"></path>
+                </svg>
+                <p>2025 Tên Logo. All rights reserved.</p>
+            </div>
+            <div class="copyright-links">
+                <p>Điều Khoản Dịch Vụ</p>
+                <p>Chính Sách Bảo Mật</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

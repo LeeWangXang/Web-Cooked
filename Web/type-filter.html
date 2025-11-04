@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Filter Component</title>
+    <link rel="stylesheet" href="type-filter.css">
+    <style>
+        /* CSS để test component độc lập */
+        body {
+            padding: 50px;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .test-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <!-- Type Filter Component -->
+        <div class="type-filter" id="typeFilter">
+            <button class="type-filter-toggle">
+                <p>Loại</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 15.4L6 9.4L7.4 8L12 12.6L16.6 8L18 9.4L12 15.4Z" fill="#888888"/>
+                </svg>
+            </button>
+            
+            <div class="type-filter-menu">
+                <div class="type-filter-content">
+                    <!-- Column 1 -->
+                    <div class="type-filter-column">
+                        <div class="type-option selected" data-type="chay">
+                            <div class="type-checkbox">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.1668 5.75L8.62516 16.2917L3.8335 11.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p class="type-label">Món chay</p>
+                        </div>
+                        <div class="type-option" data-type="kho">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Món kho</p>
+                        </div>
+                        <div class="type-option" data-type="nuong">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Món nướng</p>
+                        </div>
+                        <div class="type-option" data-type="chao">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Món cháo</p>
+                        </div>
+                        <div class="type-option" data-type="cuon">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Món cuốn</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="type-filter-column">
+                        <div class="type-option" data-type="salad">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Salad</p>
+                        </div>
+                        <div class="type-option" data-type="canh">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Canh</p>
+                        </div>
+                        <div class="type-option" data-type="lau">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Món lẩu</p>
+                        </div>
+                        <div class="type-option" data-type="banh">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Bánh ngọt</p>
+                        </div>
+                        <div class="type-option" data-type="douong">
+                            <div class="type-checkbox"></div>
+                            <p class="type-label">Đồ uống</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo thông báo -->
+        <div id="demoMessage" style="padding: 20px; background: white; border-radius: 12px; border: 1px solid #000;">
+            <h3>Selected Types: <span id="selectedTypes">Món chay</span></h3>
+        </div>
+    </div>
+
+    <script src="type-filter.js"></script>
+    <script>
+        // Demo event listener
+        document.getElementById('typeFilter').addEventListener('typeFilterChanged', function(e) {
+            const selectedTypes = e.detail.selectedTypes;
+            document.getElementById('selectedTypes').textContent = selectedTypes.join(', ') || 'None';
+            console.log('Selected types:', selectedTypes);
+        });
+    </script>
+</body>
+</html>
